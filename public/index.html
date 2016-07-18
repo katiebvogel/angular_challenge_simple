@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="namesApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Angular Challenge Part2</title>
+    <script src="vendors/angular/angular.min.js"></script>
+    <script src="client.js"></script>
+  </head>
+  <body ng-controller="MainController">
+
+    <button ng-click="getStudents()">Click For Student List</button>
+      <ol>
+        <li ng-repeat="student in students">
+          {{student}}
+        </li>
+      </ol>
+
+  </body>
+</html>
